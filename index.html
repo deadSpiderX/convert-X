@@ -1,0 +1,69 @@
+<doctype html>
+	<html>
+		<head>
+			<meta name="viewport"v content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<link rel="stylesheet" type="text/css" href="style.css"/>  
+	
+			<style>
+				*{
+					margin: 0;
+					padding: 0;
+									}
+				body{
+					background: black;
+				}
+				b{
+					color: green;
+					font-style: sans-serif;
+					font-size: 70px;
+					margin-left: 50px;
+					margin-top: 100px;
+				}
+				input{
+					height: 50px;
+					width: 300px;
+					outline: none;
+					background: none;
+			  border: none;
+					border-bottom: 3px solid green;
+					margin-top: 200px;
+					margin-left: 50px;
+					color: white;
+				}
+				button{
+					margin-left: 50px;
+					margin-top: 50px;
+					height: 50px;
+					width: 100px;
+					background:green;
+					border: none;
+					border-radius:10px;
+				}
+				.container{
+			
+							margin-top: 50px;
+					}
+</style>
+
+		</head>
+		<body>
+			<div class = "container">
+			<b>covertX</b>
+			<input type = "number" placeholder = "Enrer The Ruppey" id = "money"/>
+			<button onclick = "r()">
+				Get In $
+				</button>
+				</div>
+		<script>
+			function r(){
+			const input = document.getElementById("money").value;
+		const rm = Number(input);
+		const output = rm/60;
+		alert(output + "$");
+			}
+			
+			
+			
+				</script>
+			</body>
+		</html>
